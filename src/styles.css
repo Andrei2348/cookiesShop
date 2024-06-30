@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: "Steppe-Book";
+  src: url("./assets/fonts/Steppe-Book.ttf");
+}
+@font-face {
+  font-family: "Steppe-ExtraBold";
+  src: url("./assets/fonts/Steppe-ExtraBold.ttf");
+}
+
+body {
+  background-color: #5243f4;
+  font-family: "Steppe-Book", sans-serif;
+  color: #ffffff;
+}
+.button {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 18px 47px 18px 46px;
+  border: none;
+  border-radius: 60px;
+  font-size: 18px;
+  color: #5243f4;
+  outline: none;
+  transition: background-color ease 0.5s;
+}
+.button:disabled{
+  cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+.button:hover:not(:disabled) {
+  background-color: #eeeeee;
+}
+.common__title {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  font-family: "Steppe-ExtraBold", sans-serif;
+}
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
